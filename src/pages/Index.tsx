@@ -3,6 +3,7 @@ import { Sprout, Droplets, FlaskConical, ArrowRight, Sun } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Header from "@/components/Header";
 import FeatureCard from "@/components/FeatureCard";
+import FarmerDashboard from "@/components/FarmerDashboard";
 
 const Index = () => {
   return (
@@ -74,22 +75,8 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Weather Alert Preview */}
-      <section className="container py-12">
-        <div className="farmer-card bg-sun-light border-none">
-          <div className="flex flex-col md:flex-row items-center gap-6 text-center md:text-left">
-            <div className="w-16 h-16 rounded-full bg-sun flex items-center justify-center flex-shrink-0">
-              <Sun className="w-9 h-9 text-foreground" />
-            </div>
-            <div>
-              <h3 className="text-xl font-bold mb-2">Weather Alerts</h3>
-              <p className="text-muted-foreground text-lg">
-                Get weather warnings for your location to protect your crops
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* Farmer Dashboard */}
+      <FarmerDashboard />
 
       {/* CTA Section */}
       <section className="container py-12 md:py-20">
