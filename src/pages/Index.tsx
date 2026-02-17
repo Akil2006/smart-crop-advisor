@@ -3,7 +3,7 @@ import { Sprout, Droplets, FlaskConical, ArrowRight, Sun } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Header from "@/components/Header";
 import FeatureCard from "@/components/FeatureCard";
-import FarmerDashboard from "@/components/FarmerDashboard";
+import FarmPulse from "@/components/FarmPulse";
 
 const Index = () => {
   return (
@@ -75,8 +75,8 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Farmer Dashboard */}
-      <FarmerDashboard />
+      {/* Farm Pulse - Today's Advisory */}
+      <FarmPulse />
 
       {/* CTA Section */}
       <section className="container py-12 md:py-20">
